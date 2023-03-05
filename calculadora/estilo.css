@@ -1,0 +1,53 @@
+body{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+button{
+	width: 20%;
+	height: 50px;
+	font-size: 20px;
+	margin: 10px 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	float: left;
+}
+button:hover{
+	cursor: pointer;
+}
+button:active{
+	transform:  scale(1.05);
+}
+
+
+.calculadora{
+	border-radius: 10px;
+	padding: 20px;
+	background-color: gray;
+}
+.operador{
+	color: #219ebc;
+}
+.igual{
+	width: 42%;
+}
+#display{
+	width: 100%;
+	height: 60px;
+	font-size: 20px;
+	text-align: right;
+	margin-bottom: 10px;
+	padding: 20px;
+	color: white;
+	background-color: blue;
+	border: none;
+	box-sizing: border-box;
+}
+#ac{
+	color: #219ebc;
+}
+#de{
+	color: #219ebc;
+}
