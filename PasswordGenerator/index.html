@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password</title>
+
+  <!-- Importa o Bootstrap via link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="container p-5">
+    <h1 class="mx-auto text-center">Gerador de senha</h1>
+  
+
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center p-5">
+        <form>
+          <label for="tamanho">Tamanho da senha:</label>
+          <input type="range" name="tamanho" id="tamanho" min="1" max="100" value="8" onclick="UpdateOutput()">
+          <output for="tamanho">8</output>
+          <button type="button" class="btn btn-primary" onclick="gerar()">Gerar senha</button>
+        </form>
+
+        <p class="p-5" id="senha"></p>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Importa os scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
